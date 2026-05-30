@@ -12,4 +12,10 @@ public class Controller {
         return "Hello World";
     }
 
+    @GetMapping("/sampleApi")
+    public String sampleApi(){
+
+        return "Hello I am deployed in render";
+    }
+
 }

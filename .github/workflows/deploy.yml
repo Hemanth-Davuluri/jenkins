@@ -21,7 +21,9 @@ jobs:
         java-version: '21'
       
     - name: Build Jar
-      run: ./mvnw clean package -DskipTests
+      run: |
+        chmod +x ./mvnw
+        ./mvnw clean package -DskipTests
       
 
     - name: Login to GitHub Container Registry

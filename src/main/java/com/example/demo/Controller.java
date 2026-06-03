@@ -9,7 +9,7 @@ public class Controller {
 
     @GetMapping("/api")
     public String api(){
-        return "Hello World";
+        return "Hello World! ";
     }
 
     @GetMapping("/sampleApi")

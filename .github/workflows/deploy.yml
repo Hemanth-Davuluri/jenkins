@@ -47,5 +47,5 @@ jobs:
           docker stop spring-demo || true
           docker rm spring-demo || true
           docker pull ${{ secerts.DOCKER_USERNAME }}/spring-boot-demo:latest
-          dcoker run -d --name spring-demo -p 8090:8090 ${{ secerts.DOCKER_USERNAME }}/spring-boot-demo:latest
+          docker run -d --name spring-demo -p 8090:8090 ${{ secerts.DOCKER_USERNAME }}/spring-boot-demo:latest
           

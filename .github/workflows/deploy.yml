@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: actions/checkout@v4
       
     - name: Setup Java
-      uses: actions/checkout@c4
+      uses: actions/checkout@v5
       with: 
         distribution: 'temurin'
         java-version: '21'
